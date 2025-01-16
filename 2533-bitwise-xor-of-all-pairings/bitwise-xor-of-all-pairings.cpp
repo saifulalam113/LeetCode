@@ -1,5 +1,7 @@
 class Solution {
 public:
+    //Learning: If we XOR a number even number of times, it will become 0
+    //If we XOR a element odd number of times, the result will be the same number
     int xorAllNums(vector<int>& nums1, vector<int>& nums2) {
         int n1 = nums1.size();
         int n2 = nums2.size();
