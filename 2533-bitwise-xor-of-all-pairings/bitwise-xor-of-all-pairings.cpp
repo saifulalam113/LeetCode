@@ -4,6 +4,7 @@ public:
         int n1 = nums1.size();
         int n2 = nums2.size();
 
+        // if n1 is even, each element in nums2 is XOR'd even number of times. Using the property of XOR'd (x ^ x = 0), all the elements cancel out and contribute 0 in the result;
         //nums1 = [m1,m2]
         //nums2 = [x1, x2]
 
