@@ -5,7 +5,7 @@ public:
 
         int windowSum = 0;
         int count = 0;
-        double avg = -pow(10, 5);
+        int maxWindowSum = -pow(10, 9);
         for(int i = 0; i < n; i++)
         {
             windowSum += nums[i];
@@ -19,10 +19,10 @@ public:
 
             if(count == k)
             {
-                avg = max(avg, windowSum/(double)k); 
+                maxWindowSum = max(maxWindowSum, windowSum); 
             }
         }
 
-        return avg;
+        return maxWindowSum/(double)k;
     }
 };
